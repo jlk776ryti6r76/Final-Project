@@ -1,0 +1,57 @@
+/* Navbar */
+.doctor-navbar {
+    width: 100%;
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.doctor-navbar .doctor-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.doctor-navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.doctor-navbar ul li {
+    margin-right: 20px;
+}
+
+.doctor-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.doctor-navbar ul li a:hover {
+    background-color: #34495e;
+}
+
+.doctor-navbar ul li a.active {
+    background-color: #27ae60;
+}
+
+/* Main content offset for fixed navbar */
+.doctor-content {
+    margin-top: 60px; /* height of navbar */
+    padding: 30px;
+    background: #f4f4f4;
+    min-height: calc(100vh - 60px);
+}
